@@ -40,7 +40,6 @@ app.post("/", async (req, res) => {
       },
     });
   
-    // const msg = "hello, how much is the course?";
     const msg = req.body.customerQuestion;
   
     const result = await chat.sendMessage(msg);
