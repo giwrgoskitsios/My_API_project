@@ -10,7 +10,7 @@
   <body class="gradient-background">
     <div class="container">
       <form action="/" id="form" class="form" method="POST">
-        <h1>Ask us anything you want for <%= topic%></h1>
+        <h1>I am Giorgos and this is chat bot app that I made. Ask anything you want about <%= topic%></h1>
         <textarea
           id="customerQuestion"
           name="customerQuestion"
@@ -21,7 +21,7 @@
       <%if (locals.content) {%> <%content.forEach(object => {%>
       <p>
         <span
-          ><%if (object.role==="user") {%> You: <%} else {%> Customer Support:
+          ><%if (object.role==="user") {%> You: <%} else {%> Chatbot:
           <%}%>
         </span>
         <%= object.parts[0].text %>
